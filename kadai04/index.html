@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+<title>いろはハムスターゲーム</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <h1>いろはむすたーゲーム</h1>
+</header>
+<main>
+    <div class="main_wrapper">
+        <div class="main_content">
+            <img class="main_img" src="img/iroha.jpeg" alt="">
+            <div class="main_dashboard">
+                <div class="main_question">
+                    <p>なにをたべるの？</p>
+                    <form>
+                        <!-- <input class="key" type="food"> -->
+                        <input type="radio" name="food" value="01" id="key01" class="key" checked><label for="key01"></label>
+                        <input type="radio" name="food" value="02" id="key02" class="key"><label for="key02"></label>
+                        <input type="radio" name="food" value="03" id="key03" class="key"><label for="key03"></label>
+                        <input type="radio" name="food" value="04" id="key04" class="key"><label for="key04"></label>
+                        <input type="radio" name="food" value="05" id="key05" class="key"><label for="key05"></label>
+                        <input type="radio" name="food" value="06" id="key06" class="key"><label for="key06"></label>
+                    </form>
+                </div>
+                <div class="main_answer">
+                    <p>トッピングは？</p>
+                    <form>
+                        <!-- <input class="memo" type="text"></input> -->
+                        <input type="radio" name="add" value="07" id="memo01" class="memo" checked><label for="memo01"></label>
+                        <input type="radio" name="add" value="08" id="memo02" class="memo"><label for="memo02"></label>
+                        <input type="radio" name="add" value="09" id="memo03" class="memo"><label for="memo03"></label>
+                        <input type="radio" name="add" value="10" id="memo04" class="memo"><label for="memo04"></label>
+                        <input type="radio" name="add" value="11" id="memo05" class="memo"><label for="memo05"></label>
+                        <input type="radio" name="add" value="12" id="memo06" class="memo"><label for="memo06"></label>
+                    </form>
+                </div>
+                <div class="main_action">
+                    <div>
+                        <img class="hagu" src="img/hagu.jpeg" alt="">
+                        <ul>
+                            <li class="save">あげる</li>
+                            <li class="clear">やっぱやめる</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="list_title_wrapper">
+                <p class="text_center list_title">いろはむすたーがたべたもの</p>
+                <div class="diet">ダイエットする</div>
+            </div>
+            <div class="main_list"></div>
+        </div>
+    </div>
+</main>
+<script src="https://kit.fontawesome.com/dcd992a408.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+<footer><small>© 2022 パパ</small></footer>
+</body>
+</html>

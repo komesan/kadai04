@@ -1,0 +1,270 @@
+
+/* ここは研究中 */
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap'); */
+
+/* font-family: 'Amatic SC', cursive; */
+
+ul{
+    list-style: none;
+}
+.text_center{
+    text-align: center;
+}
+
+/* パーツ */
+body{
+    width:100%;
+}
+header{
+    padding: 0.2em 0.5em;
+    margin: 0.5em 0.5em;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+main{
+    width:100%;
+    border-bottom:1px solid #ccc;
+}
+.main_content{
+    display: flex;
+    margin-bottom: 20px;
+}
+.main_img{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-right: 10px;
+}
+.main_dashboard{
+    flex: 1;
+    display: flex;
+}
+.main_question{
+    width: 40%;
+    position: relative;
+    margin: 2em 0 2em 40px;
+    padding: 8px 15px;
+    background: #fff0c6;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.main_question:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    position: absolute;
+    font-size: 15px;
+    left: -40px;
+    bottom: 0;
+    color: #fff0c6;
+}
+.main_question:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    left: -23px;
+    bottom: 0;
+    color: #fff0c6;
+}
+.main_question>p{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 0;
+    margin-bottom: 20px;
+}
+/* .key{
+    margin:0 3%;
+    font-size:150%;
+    background-color: #e1efff;
+    box-shadow: 1px 1px 1px 1px #666;
+} */
+input[type=radio]+label:before{
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+input[type=radio][value="01"]+label:before{
+    background-image: url("../img/food01.jpeg");
+    width: 80px;
+}
+input[type=radio][value="02"]+label:before{
+    background-image: url("../img/food02.jpeg");
+    width: 80px;
+}
+input[type=radio][value="03"]+label:before{
+    background-image: url("../img/food03.jpeg");
+    width: 80px;
+}
+input[type=radio][value="04"]+label:before{
+    background-image: url("../img/food04.png");
+    width: 80px;
+}
+input[type=radio][value="05"]+label:before{
+    background-image: url("../img/food05.jpeg");
+    width: 80px;
+}
+input[type=radio][value="06"]+label:before{
+    background-image: url("../img/food06.jpeg");
+    width: 80px;
+}
+input[type=radio]:checked+label::before{
+    border: 3px solid #000;
+    box-sizing: border-box;
+}
+input[type=radio]{
+    display: none;
+} 
+.main_answer{
+    width: 40%;
+    position: relative;
+    margin: 2em 0 2em 40px;
+    padding: 8px 15px;
+    background: #fff0c6;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.main_answer:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    position: absolute;
+    font-size: 15px;
+    left: -40px;
+    bottom: 0;
+    color: #fff0c6;
+}
+.main_answer:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    position: absolute;
+    font-size: 23px;
+    left: -23px;
+    bottom: 0;
+    color: #fff0c6;
+}
+.main_answer>p{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 0;
+    margin-bottom: 20px;
+}
+.memo{
+    margin:0 3%;
+    font-size:150%;
+    background-color: #e1efff;
+    box-shadow: 1px 1px 1px 1px #666;
+}
+input[type=radio][value="07"]+label:before{
+    background-image: url("../img/add01.jpg");
+    width: 80px;
+}
+input[type=radio][value="08"]+label:before{
+    background-image: url("../img/add02.jpg");
+    width: 80px;
+}
+input[type=radio][value="09"]+label:before{
+    background-image: url("../img/add03.jpg");
+    width: 80px;
+}
+input[type=radio][value="10"]+label:before{
+    background-image: url("../img/add04.jpg");
+    width: 80px;
+}
+input[type=radio][value="11"]+label:before{
+    background-image: url("../img/add05.jpg");
+    width: 80px;
+}
+input[type=radio][value="12"]+label:before{
+    background-image: url("../img/add06.jpg");
+    width: 80px;
+}
+input[type=radio]:checked+label::before{
+    border: 3px solid #000;
+    box-sizing: border-box;
+}
+.main_action{
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+.hagu{
+    width: 150px;
+}
+.save{
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: 3px solid #666;
+    background-color: #FFCCFF;
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.save:hover{
+    background-color: #666;
+}
+.save:hover + .hagu{
+    /* ここは研究中 */
+    background-image: url("../img/hagu2.jpeg");
+}
+.clear:hover{
+    background-color: #666;
+}
+.clear{
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: 3px solid #666;
+    background-color: #99CCFF;
+    text-align: center;
+    padding: 20px 0 0 ;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.list_title_wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.diet{
+    width: 200px;
+    height: 40px;
+    color: white;
+    border: 3px solid #666;
+    background-color: #99CCFF;
+    text-align: center;
+    padding: 20px 0 0 ;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.list_title{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.main_list{
+    height: 150px;
+    width: 100%;
+    border: 3px solid #FFCCFF;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
